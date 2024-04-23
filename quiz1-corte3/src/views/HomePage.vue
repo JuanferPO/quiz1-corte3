@@ -15,15 +15,17 @@
 
       <div id="container">
         <ion-list>
-          <inputComponent id="nombre" name="nombre" label="Nombre" fill="outline"/>
-          <inputComponent id="fecha-nacimiento" name="fecha-nacimiento" label="Fecha nacimiento" fill="outline"/>
-          <inputComponent id="celular" name="celular" label="Celular" fill="outline"/>
-          <inputComponent id="correo" name="correo" label="Correo" fill="outline"/>
+          <inputGeneric id="nombre" name="nombre" label="Nombre" fill="outline"/>
+          <inputGeneric id="fecha-nacimiento" name="fecha-nacimiento" label="Fecha nacimiento" fill="outline"/>
+          <inputGeneric id="celular" name="celular" label="Celular" fill="outline"/>
+          <inputGeneric id="correo" name="correo" label="Correo" fill="outline"/>
+          <br>
+          <checkboxGeneric id="terminos" name="terminos" value="Aceptar términos y condiciones"/>
         </ion-list>
-        <buttonComponent id="agregar" value="Agregar"/>
-        <buttonComponent id="buscar" value="Buscar" color="success"/>
-        <buttonComponent id="modificar" value="Modificar" color="warning"/>
-        <buttonComponent id="eliminar" value="Eliminar" color="danger"/>
+        <buttonGeneric id="agregar" value="Agregar"/>
+        <buttonGeneric id="buscar" value="Buscar" color="success"/>
+        <buttonGeneric id="modificar" value="Modificar" color="warning"/>
+        <buttonGeneric id="eliminar" value="Eliminar" color="danger"/>
       </div>
     </ion-content>
   </ion-page>
@@ -31,8 +33,9 @@
 
 <script setup lang="ts">
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
-import buttonComponent from '@/components/buttonComponent.vue';
-import inputComponent from '@/components/inputComponent.vue';
+import buttonGeneric from '@/components/buttonGeneric.vue';
+import inputGeneric from '@/components/inputGeneric.vue';
+import checkboxGeneric from '@/components/checkboxGeneric.vue';
 </script>
 
 <style scoped>
